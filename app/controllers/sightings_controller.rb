@@ -12,5 +12,6 @@ class SightingsController < ApplicationController
         }, :except => [:updated_at])
     else
       render json: {message: 'No sighting found with that id' }
+    end
   end
 end
